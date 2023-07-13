@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">BIT6thSem</string>
+    <string-array name="Country">
+        <item>Nepal</item>
+        <item>India</item>
+        <item>Pakistan</item>
+        <item>Afghanistan</item>
+        <item>China</item>
+        <item>Bhutan</item>
+    </string-array>
+</resources>

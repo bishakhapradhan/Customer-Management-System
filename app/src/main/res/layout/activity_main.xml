@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="25dp"
+        tools:context=".MainActivity">
+
+        <EditText
+            android:id="@+id/edtLname"
+            android:layout_width="160dp"
+            android:layout_height="47dp"
+            android:layout_marginStart="28dp"
+            android:ems="10"
+            android:hint="Last Name"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/edtFname"
+            app:layout_constraintTop_toTopOf="@+id/edtFname" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="4dp"
+            android:text="Sign Up"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintBottom_toTopOf="@+id/textView2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="121dp"
+            android:layout_height="19dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="15dp"
+            android:text="It's quick and easy."
+            app:layout_constraintBottom_toTopOf="@+id/edtFname"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <EditText
+            android:id="@+id/edtFname"
+            android:layout_width="160dp"
+            android:layout_height="47dp"
+            android:layout_marginBottom="5dp"
+            android:autoText="false"
+            android:ems="10"
+            android:hint="   First Name"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toTopOf="@+id/edtMobile"
+            app:layout_constraintEnd_toStartOf="@+id/edtLname"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+        <EditText
+            android:id="@+id/edtMobile"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_marginBottom="5dp"
+            android:ems="10"
+            android:hint="   Mobile number or email"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toTopOf="@+id/edtPassword"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edtFname" />
+
+        <EditText
+            android:id="@+id/edtPassword"
+            android:layout_width="0dp"
+            android:layout_height="47dp"
+            android:layout_marginBottom="5dp"
+            android:ems="10"
+            android:hint="   New Password"
+            android:inputType="textPassword"
+            app:layout_constraintBottom_toTopOf="@+id/textView4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/edtMobile"
+            app:layout_constraintTop_toBottomOf="@+id/edtMobile" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="Birthday"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            app:layout_constraintBottom_toTopOf="@+id/spnYear"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edtPassword" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="Gender"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            app:layout_constraintBottom_toTopOf="@+id/radio_group_gender"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spnYear" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="344dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:text=" By clicking Sign Up, you agree to our Terms, Data Policy and Cookies Policy. You may receive SMS Notifications from us and can opt out any time.  Sign Up"
+            app:layout_constraintBottom_toTopOf="@+id/btnSignUp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spnCountry" />
+
+        <Button
+            android:id="@+id/btnSignUp"
+            android:layout_width="184dp"
+            android:layout_height="46dp"
+
+
+            android:layout_marginTop="5dp"
+            android:text="Sign Up"
+            app:layout_constraintEnd_toEndOf="@+id/textView6"
+            app:layout_constraintHorizontal_bias="0.511"
+            app:layout_constraintStart_toStartOf="@+id/textView6"
+            app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="Country"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            app:layout_constraintBottom_toTopOf="@+id/spnCountry"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/radio_group_gender"
+            app:layout_constraintVertical_chainStyle="spread_inside" />
+
+        <Spinner
+            android:id="@+id/spnCountry"
+            android:layout_width="213dp"
+            android:layout_height="47dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            app:layout_constraintBottom_toTopOf="@+id/textView6"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3"
+            app:layout_constraintVertical_chainStyle="spread" />
+
+        <RadioGroup
+            android:id="@+id/radio_group_gender"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="373dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView5">
+
+            <RadioButton
+                android:id="@+id/rbtnMale"
+                android:layout_width="88dp"
+                android:layout_height="47dp"
+                android:text="Male"
+                tools:layout_editor_absoluteX="18dp"
+                tools:layout_editor_absoluteY="451dp" />
+
+            <RadioButton
+                android:id="@+id/rbtnFemale"
+                android:layout_width="116dp"
+                android:layout_height="47dp"
+                android:text="Female"
+                tools:layout_editor_absoluteX="172dp"
+                tools:layout_editor_absoluteY="449dp" />
+        </RadioGroup>
+
+        <Spinner
+            android:id="@+id/spnYear"
+            android:layout_width="110dp"
+            android:layout_height="47dp"
+            android:layout_marginBottom="5dp"
+            app:layout_constraintBottom_toTopOf="@+id/textView5"
+            app:layout_constraintEnd_toStartOf="@+id/spnMonth"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+        <Spinner
+            android:id="@+id/spnDay"
+            android:layout_width="110dp"
+            android:layout_height="47dp"
+            app:layout_constraintBottom_toBottomOf="@+id/spnMonth"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/spnMonth"
+            app:layout_constraintTop_toTopOf="@+id/spnMonth" />
+
+        <Spinner
+            android:id="@+id/spnMonth"
+            android:layout_width="110dp"
+            android:layout_height="47dp"
+            android:spinnerMode="dropdown"
+            app:layout_constraintBottom_toBottomOf="@+id/spnYear"
+            app:layout_constraintEnd_toStartOf="@+id/spnDay"
+            app:layout_constraintStart_toEndOf="@+id/spnYear"
+            app:layout_constraintTop_toTopOf="@+id/spnYear"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/btnShowAllRecords"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show Records"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnSignUp" />
+
+        <ImageButton
+            android:id="@+id/btnclose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="212dp"
+            android:layout_marginTop="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/textView"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@android:drawable/ic_menu_close_clear_cancel" />
+
+        <Button
+            android:id="@+id/btnStartService"
+            android:layout_width="180dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="22dp"
+            android:layout_marginBottom="54dp"
+            android:text="Start Service"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btnStopService"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnShowAllRecords" />
+
+        <Button
+            android:id="@+id/btnStopService"
+            android:layout_width="180dp"
+            android:layout_height="48dp"
+            android:text="STOP SERVICE"
+            app:layout_constraintBottom_toBottomOf="@+id/btnStartService"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/btnStartService" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
